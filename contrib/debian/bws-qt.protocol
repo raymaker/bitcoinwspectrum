@@ -1,0 +1,11 @@
+[Protocol]
+exec=bws-qt '%u'
+protocol=bws
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

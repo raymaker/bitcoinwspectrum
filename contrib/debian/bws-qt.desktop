@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BWS
+Comment=BWS P2P Cryptocurrency
+Comment[fr]=BWS, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BWS, eşten eşe kriptografik sanal para birimi
+Exec=bws-qt %u
+Terminal=false
+Type=Application
+Icon=bws128
+MimeType=x-scheme-handler/bws;
+Categories=Office;Finance;

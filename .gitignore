@@ -1,0 +1,6 @@
+.ds_store
+*.po
+*.plo
+*.a
+*.app
+*.o

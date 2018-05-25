@@ -1,0 +1,26 @@
+[Unit]
+Description=BWS's distributed currency daemon
+After=network.target
+
+[Service]
+User=bws
+Group=bws
+
+Type=forking
+PIDFile=/var/lib/bwsd/bwsd.pid
+
+ExecStart=/usr/bin/bwsd -daemon -pid=/var/lib/bwsd/bwsd.pid \
+          -conf=/etc/bws/bws.conf -datadir=/var/lib/bwsd
+
+ExecStop=-/usr/bin/bws-cli -conf=/etc/bws/bws.conf \
+         -datadir=/var/lib/bwsd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+# /etc/conf.d/bwsd: config file for /etc/init.d/bwsd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bws/bws.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bwsd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bwsd.pid"
+
+# Where to write bwsd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bwsd"
+
+# User and group to own bwsd process
+#BITCOIND_USER="bws"
+#BITCOIND_GROUP="bws"
+
+# Path to bwsd executable
+#BITCOIND_BIN="/usr/bin/bwsd"
+
+# Nice value to run bwsd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
