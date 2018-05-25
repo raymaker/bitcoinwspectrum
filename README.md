@@ -5,17 +5,17 @@ BWS Core integration/staging repository
 BWS is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - Anonymized transactions using coin mixing technology, we call it _Xend_.
 - Fast transactions featuring guaranteed zero confirmation transactions (_SwiftTX_).
-- Current Masternode technology used to secure the network and provide the above features, each Masternode is secured with a collateral of 1000 BWS.
+- Current Masternode technology used to secure the network and provide the above features, each Masternode is secured with a collateral of 50000 BWS.
 
-More information at [http://www.bwscoin.com](http://www.bwscoin.com)
+More information at [https://bitcoinwspectrum.tk/](https://bitcoinwspectrum.tk/)
 
 ### Coin Specs
 | Algo                         | Xevan              |
 |------------------------------|--------------------|
 | Block Time                   | 60 Seconds         |
 | Difficulty Retargeting       | Every Block        |
-| Max Coin Supply (All Phases) | 21M BWS           |
-| XIOS swap coins              | 2,446,202 BWS*    |
+| Max Coin Supply (All Phases) | 102 M BWS           |
+| XIOS swap coins              | 102 M BWS*    |
 
 Wallet Port: 41798, RPC Port: 41799
 
@@ -23,7 +23,7 @@ Wallet Port: 41798, RPC Port: 41799
 
 |  **Amount**             | **Notes**                |
 |-------------------------|--------------------------|
-| 2,446,202 BWS          | Initial XIOS swap 0 Day  |
+| 102 M BWS               | 102 M BWS SWAP           |
 
 ### Rewards Breakdown PoW blocks 151-43200, PoS blocks 43201 - end
 
