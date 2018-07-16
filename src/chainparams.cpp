@@ -136,7 +136,7 @@ public:
 		nZerocoinStartHeight = nLastPOWBlock + 1;
 
         vSeeds.push_back(CDNSSeedData("144.202.24.153", "45.76.248.116", "217.163.23.222", "80.240.20.121"));
-        vSeeds.push_back(CDNSSeedData("seed7.bwscoin.com", "seed7.bwscoin.com", "seed7.bwscoin.com", "seed7.bwscoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed7.bwscoin.com", "seed7.bwscoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 29); //
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 66); //
