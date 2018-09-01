@@ -90,10 +90,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-		pchMessageStart[0] = 0xd1;
-		pchMessageStart[1] = 0x5a;
-		pchMessageStart[2] = 0xc4;
-		pchMessageStart[3] = 0x54;
+	pchMessageStart[0] = 0xd1;
+	pchMessageStart[1] = 0x5a;
+	pchMessageStart[2] = 0xc4;
+	pchMessageStart[3] = 0x54;
         vAlertPubKey = ParseHex("0");
         nDefaultPort = 41967;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // BWS starting difficulty is 1 / 2^12
@@ -104,10 +104,10 @@ public:
         nTargetTimespan = 1 * 60; // BWS: 1 minute
         nTargetSpacing = 1 * 60;  // BWS: 1 minute
         nMaturity = 10;
-		nMaxMoneyOut = 910000000 * COIN;
-		nMinStakeInput = 15 * COIN;
+	nMaxMoneyOut = 910000000 * COIN;
+	nMinStakeInput = 15 * COIN;
 
-		const char* pszTimestamp = "The Washington Post Senate approves bipartisan resolution to restore FCC net neutrality rules";
+	const char* pszTimestamp = "The Washington Post Senate approves bipartisan resolution to restore FCC net neutrality rules";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -120,25 +120,27 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1527211317;
         genesis.nNonce = 22513459;
-		    genesis.nBits = 0x1e0ffff0;
+        genesis.nBits = 0x1e0ffff0;
         hashGenesisBlock = genesis.GetHash();
 
         assert(hashGenesisBlock == uint256("0x000003d0cfd60da5030fab898517367c2265e4b4a037aa8d93d4d8df2cc5dfe4"));
         assert(genesis.hashMerkleRoot == uint256("0x613b20717cb85496bc9027ff414a578ab9ad0315430e5cfa9064e3b9f32acdc0"));
 
-		/** Height or Time Based Activations **/
+	/** Height or Time Based Activations **/
         nModifierUpdateBlock = 1;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-		nBlockEnforceInvalidUTXO = nLastPOWBlock + 1;
-		// THIS MUST BE SOMETIME IN THE FUTURE AFTER BLOCK 1
+	nBlockEnforceInvalidUTXO = nLastPOWBlock + 1;
+	// THIS MUST BE SOMETIME IN THE FUTURE AFTER BLOCK 1
         //nZerocoinStartTime = genesis.nTime + 2678400; // 31 days after genesis
         nZerocoinStartTime = genesis.nTime + 600; // 10min after genesis
-		nZerocoinStartHeight = nLastPOWBlock + 1;
+	nZerocoinStartHeight = nLastPOWBlock + 1;
 
         vSeeds.push_back(CDNSSeedData("144.202.24.153", "144.202.24.153"));
-	vSeeds.push_back(CDNSSeedData("45.76.248.116", "45.76.248.116"));
-	vSeeds.push_back(CDNSSeedData("217.163.23.222", "217.163.23.222"));
-	vSeeds.push_back(CDNSSeedData("80.240.20.121", "80.240.20.121"));
+        vSeeds.push_back(CDNSSeedData("45.76.248.116", "45.76.248.116"));
+        vSeeds.push_back(CDNSSeedData("217.163.23.222", "217.163.23.222"));
+        vSeeds.push_back(CDNSSeedData("178.62.79.116", "178.62.79.116"));
+        vSeeds.push_back(CDNSSeedData("35.227.72.193", "35.227.72.193"));
+        vSeeds.push_back(CDNSSeedData("80.240.20.121", "80.240.20.121"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 29); //
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 66); //
