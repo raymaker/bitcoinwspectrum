@@ -135,7 +135,10 @@ public:
         nZerocoinStartTime = genesis.nTime + 600; // 10min after genesis
 		nZerocoinStartHeight = nLastPOWBlock + 1;
 
-	// vSeeds.push_back(CDNSSeedData("", ""));
+        vSeeds.push_back(CDNSSeedData("144.202.24.153", "144.202.24.153"));
+	vSeeds.push_back(CDNSSeedData("45.76.248.116", "45.76.248.116"));
+	vSeeds.push_back(CDNSSeedData("217.163.23.222", "217.163.23.222"));
+	vSeeds.push_back(CDNSSeedData("80.240.20.121", "80.240.20.121"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 29); //
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 66); //
